@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&family=Poppins&display=swap");
+@media screen and (max-width: 380px) {
+  nav {
+    background-color: #e0dbdb;
+    border-bottom: 1px solid #0d0d0d;
+  }
+  nav .navies {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 5px;
+  }
+  nav .navies ul {
+    display: flex;
+    font-family: sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    font-size: medium;
+  }
+  nav .navies ul a {
+    color: #7f7f7f;
+    text-decoration: none;
+    padding: 5px;
+  }
+  nav .navies .icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #7f7f7f;
+  }
+  nav .navies .icons .iconify {
+    padding: 2px;
+  }
+}
+@media screen and (min-width: 380px) {
+  nav {
+    background-color: #e0dbdb;
+    border-bottom: 1px solid #0d0d0d;
+  }
+  nav .navies {
+    background-color: #e0dbdb;
+    border-bottom: 1px solid #0d0d0d;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  nav .navies ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  nav .navies ul a {
+    color: #7f7f7f;
+    text-decoration: none;
+    padding: 5px;
+  }
+  nav .navies .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #7f7f7f;
+  }
+  nav .navies .icons .iconify {
+    padding: 2px;
+  }
+}
+@media screen and (max-width: 380px) {
+  p {
+    font-family: poppins;
+  }
+
+  h1 {
+    font-family: Poppins;
+    letter-spacing: 15px;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  h3 {
+    font-family: poppins;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 5px;
+  }
+
+  button {
+    font-family: poppins;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 380px) {
+  p {
+    font-family: poppins;
+  }
+
+  h1 {
+    font-family: Poppins;
+    margin-top: 0px;
+    letter-spacing: 15px;
+    font-size: 64px;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: normal;
+  }
+
+  h3 {
+    font-family: poppins;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 10px;
+  }
+
+  h4 {
+    font-family: poppins;
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  button {
+    font-family: poppins;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 380px) {
+  section {
+    background-color: #e0dbdb;
+    padding: 20px;
+  }
+  section img {
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+  }
+}
+@media screen and (min-width: 380px) {
+  body {
+    background-color: #ececec;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  section {
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: "img title title" "img p p" "img p p";
+  }
+  section h2 {
+    grid-area: title;
+  }
+  section p {
+    grid-area: p;
+    font-size: 32px;
+  }
+  section img {
+    grid-area: img;
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    padding: 20px;
+  }
+}

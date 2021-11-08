@@ -1,0 +1,20 @@
+nav{
+    display: grid;
+    grid-template-areas: 
+    "blank git linked insta"
+    "home projects graphics contact";
+    background-color: rgba(224, 219, 219, 1);   
+    border-bottom: 2px solid rgba(13, 13, 13, 1);
+}
+
+@media screen and (min-width: 320px) {
+
+    nav{
+        
+        display: grid;
+        grid-template-areas: 
+        "home projects graphics contact" 
+        "blank git linked insta";
+        
+    }
+}
