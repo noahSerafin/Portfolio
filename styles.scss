@@ -2,8 +2,9 @@
 @import "styles/_typography";
 
 @media screen and (max-width: 380px) {
+    
     body {
-        background-color: rgba(236, 236, 236, 1);
+        margin: 0;   
     }
 
     h1 {
@@ -115,6 +116,11 @@
 }
 
 @media screen and (min-width: 380px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgba(236, 236, 236, 1);
+    }
     header {
         text-align: center;
         margin: 0px;                    
