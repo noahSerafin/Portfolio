@@ -67,8 +67,9 @@
             }
 
             .icons {                               
-                color: rgba(127, 127, 127, 1);
-                .iconify{
+                .icon{
+                    text-decoration: none;
+                    color: rgba(127, 127, 127, 1);
                     padding: 2px;
                     font-size: 35px;
                 }

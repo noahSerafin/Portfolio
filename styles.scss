@@ -51,7 +51,9 @@
     .project-image {
       height: 300px;
       width: 300px;
-      object-fit: contain;
+      object-fit: contain;  
+      display: block;
+      margin: auto;    
     }
   }
 
@@ -63,6 +65,8 @@
       height: 300px;
       width: 300px;
       object-fit: contain;
+      display: block;
+      margin: auto;
     }
   }
 
