@@ -2,275 +2,275 @@
 @import "styles/_typography";
 
 @media screen and (max-width: 380px) {
-    
-    body {
-        margin: 0;   
+  body {
+    margin: 0;
+  }
+
+  h1 {
+    letter-spacing: 10px;
+    font-weight: normal;
+  }
+
+  h3 {
+    text-shadow: rgba(13, 13, 13, 1);
+    display: flex;
+    justify-content: center;
+  }
+
+  .tour {
+    width: 360px;
+    height: 245px;
+    margin: auto;
+    background-image: url("projects.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+  .tourbutton {
+    color: rgba(236, 236, 236, 1);
+    background-color: rgba(127, 127, 127, 1);
+    border-radius: 10px;
+    width: 188px;
+    height: 20px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  footer {
+    background-color: rgba(236, 236, 236, 1);
+  }
+
+  .project-grid {
+    background-color: rgba(224, 219, 219, 1);
+    padding: 20px;
+
+    .project-image {
+      height: 300px;
+      width: 300px;
+      object-fit: contain;
+    }
+  }
+
+  .project-grid-inverted {
+    background-color: rgba(224, 219, 219, 1);
+    padding: 20px;
+
+    .project-image {
+      height: 300px;
+      width: 300px;
+      object-fit: contain;
+    }
+  }
+
+  .graphics-grid {
+    margin-top: 0px;
+    display: grid;
+    grid-template-areas: "title" "p" "img";
+    .graphics-text {
+      margin-top: 30px;
+      h2 {
+        grid-area: title;
+      }
+
+      p {
+        grid-area: p;
+        margin: 5px;
+      }
     }
 
-    h1 {
-        letter-spacing: 10px;       
-        font-weight: normal;
+    .graphics-image {
+      grid-area: img;
+      width: 300px;
+      height: 300px;
+      object-fit: contain;
+      padding: 10px;
     }
+  }
 
-    h3 {
-        text-shadow: rgba(13, 13, 13, 1);
-        display: flex;
-        justify-content: center;       
+  .contact-form {
+    text-align: center;
+
+    .forms {
+      input {
+        color: rgba(127, 127, 127, 1);
+        border: 1px solid rgba(13, 13, 13, 1);
+      }
     }
-    
-    .tour {
-        width: 360px;
-        height: 245px;
-        margin: auto;
-        background-image: url("projects.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        button {            
-            color: rgba(236, 236, 236, 1);
-            background-color: rgba(127, 127, 127, 1);
-            border-radius: 10px;
-            width: 188px;
-            position: absolute;
-            z-index: 2;
-        }        
-    }    
-
-    footer {
-        background-color: rgba(236, 236, 236, 1);
-    }    
-
-    .project-grid{
-        background-color: rgba(224, 219, 219, 1);
-        padding: 20px;        
-        
-        .project-image {            
-            height: 300px;
-            width: 300px;
-            object-fit: contain;
-        }
+    .submit {
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
+  }
 
-    .project-grid-inverted{
-        background-color: rgba(224, 219, 219, 1);
-        padding: 20px;
-        
-        .project-image {            
-            height: 300px;
-            width: 300px;
-            object-fit: contain;
-        }
+  #mobile {
+    display: flex;
+    justify-content: center;
+    .chevron {
+      margin-top: 10px;
     }
-
-    .graphics-grid{
-        margin-top: 0px;       
-        display: grid;
-        grid-template-areas: "title" "p" "img";
-        .graphics-text{
-            margin-top: 30px;
-            h2 {
-                grid-area: title;                
-            }
-    
-            p {
-                grid-area: p;                
-                margin: 5px;
-            }
-        }        
-
-        .graphics-image {
-            grid-area: img;
-            width: 300px;
-            height: 300px;
-            object-fit: contain;
-            padding: 10px;
-        }
-    }
-
-    .contact-form {
-        text-align: center;
-                
-         .forms {
-             input {
-                 color: rgba(127, 127, 127, 1);
-                 border: 1px solid rgba(13, 13, 13, 1);
-            }
-        }
-         .submit {
-             margin-top: 20px;
-             margin-bottom: 20px;            
-        }
-    }
-
-    #mobile{
-        display: flex;
-        justify-content: center;
-        .chevron{
-            margin-top: 10px;
-        }
-    }
+  }
 }
 
 @media screen and (min-width: 380px) {
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: rgba(236, 236, 236, 1);
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(236, 236, 236, 1);
+  }
+  header {
+    text-align: center;
+    margin: 0px;
+  }
+
+  h3 {
+    text-shadow: rgba(13, 13, 13, 1);
+    margin: 0px;
+  }
+
+  main {
+    background-color: rgba(236, 236, 236, 1);
+    height: 100%;
+  }
+
+  .subheader {
+    display: flex;
+    justify-content: center;
+    h2 {
+      letter-spacing: 2px;
+      font-weight: normal;
+      width: 557px;
+      margin-top: 100px;
     }
-    header {
-        text-align: center;
-        margin: 0px;                    
-    }
+  }
 
-    h3 {
-        text-shadow: rgba(13, 13, 13, 1);
-        margin: 0px;        
-    }
+  .tour {
+    width: 440px;
+    height: 300px;
+    margin: auto;
+    background-image: url("projects.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .tourbutton {
+      font-size: medium;
+    color: rgba(236, 236, 236, 1);
+    background-color: rgba(127, 127, 127, 1);
+    border-radius: 10px;
+    width: 188px;
+    height: 35px;
+    position: relative;
+    z-index: 2;
+  }
 
-    main {
-        background-color: rgba(236, 236, 236, 1);
-        height: 100%;
-    }
+  .project-grid {
+    margin-top: 20px;
 
-    .subheader {
-        display: flex;
-        justify-content: center;
-        h2 {
-            letter-spacing: 2px;            
-            font-weight: normal;
-            width: 557px;
-            margin-top: 100px;
-        }
-    }
+    background-color: rgba(224, 219, 219, 1);
+    display: grid;
+    grid-template-areas: "title title img" "p p img" "p p img";
 
-    .tour {
-        width: 440px;
-        height: 300px;
-        margin: auto;
-        background-image: url("projects.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-
-        button {            
-            color: rgba(236, 236, 236, 1);
-            background-color: rgba(127, 127, 127, 1);
-            border-radius: 10px;
-            width: 188px;
-            position: absolute;
-            z-index: 2;
-        }
-    }    
-
-    .project-grid {
-        margin-top: 20px;
-
-        background-color: rgba(224, 219, 219, 1);
-        display: grid;
-        grid-template-areas: "title title img" "p p img" "p p img";
-
-        .project-header {
-            grid-area: title;
-            margin-top: 10px;
-            margin-left: 20px;
-        }
-
-        p {
-            grid-area: p;
-            padding: 20px;
-        }
-
-        .project-image {
-            grid-area: img;
-            padding: 20px;
-            height: 300px;
-            width: 300px;
-            object-fit: contain;
-        }
+    .project-header {
+      grid-area: title;
+      margin-top: 10px;
+      margin-left: 20px;
     }
 
-    .project-grid-inverted {
-        margin-top: 20px;
-
-        background-color: rgba(224, 219, 219, 1);
-        display: grid;
-        grid-template-areas: "img title title" "img p p" "img p p";
-
-        .project-header {
-            grid-area: title;
-            margin-top: 10px;
-            margin-left: 20px;
-        }
-
-        p {
-            grid-area: p;
-            padding: 20px;
-        }
-
-        .project-image {
-            grid-area: img;
-            padding: 20px;
-            height: 300px;
-            width: 300px;
-            object-fit: contain;
-        }
+    p {
+      grid-area: p;
+      padding: 20px;
     }
 
-    .graphics-grid{
-        margin-top: 100px;       
-        display: grid;
-        grid-template-areas: "img . . ." "img . title title" "img . p p";
-        .graphics-text{
-            margin-top: 100px;
-            h2 {
-                grid-area: title;                
-            }
-    
-            p {
-                grid-area: p;
-                font-size: 32px;
-            }
-        }        
+    .project-image {
+      grid-area: img;
+      padding: 20px;
+      height: 300px;
+      width: 300px;
+      object-fit: contain;
+    }
+  }
 
-        .graphics-image {
-            grid-area: img;
-            width: 500px;
-            height: 500px;
-            object-fit: contain;
-            padding: 20px;
-        }
+  .project-grid-inverted {
+    margin-top: 20px;
+
+    background-color: rgba(224, 219, 219, 1);
+    display: grid;
+    grid-template-areas: "img title title" "img p p" "img p p";
+
+    .project-header {
+      grid-area: title;
+      margin-top: 10px;
+      margin-left: 20px;
     }
 
-    .getIn{        
-        text-align: center;
-        font-weight: normal;
-        margin-right: 300px;
-        margin-top: 50px;
-    }
-    .contact-form {
-       text-align: center;
-               
-        .forms {
-            input {
-                color: rgba(127, 127, 127, 1);
-                border: 1px solid rgba(13, 13, 13, 1);
-            }
-        }
-        .submit {
-            margin-top: 20px;
-            margin-bottom: 20px;            
-        }
+    p {
+      grid-area: p;
+      padding: 20px;
     }
 
-    #mobile {
-        display: none;
+    .project-image {
+      grid-area: img;
+      padding: 20px;
+      height: 300px;
+      width: 300px;
+      object-fit: contain;
     }
+  }
+
+  .graphics-grid {
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas: "img . . ." "img . title title" "img . p p";
+    .graphics-text {
+      margin-top: 100px;
+      h2 {
+        grid-area: title;
+      }
+
+      p {
+        grid-area: p;
+        font-size: 32px;
+      }
+    }
+
+    .graphics-image {
+      grid-area: img;
+      width: 500px;
+      height: 500px;
+      object-fit: contain;
+      padding: 20px;
+    }
+  }
+
+  .getIn {
+    text-align: center;
+    font-weight: normal;
+    margin-right: 300px;
+    margin-top: 50px;
+  }
+  .contact-form {
+    text-align: center;
+
+    .forms {
+      input {
+        color: rgba(127, 127, 127, 1);
+        border: 1px solid rgba(13, 13, 13, 1);
+      }
+    }
+    .submit {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  #mobile {
+    display: none;
+  }
 }

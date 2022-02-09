@@ -9,8 +9,6 @@
     width: 380px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
     padding: 5px;
   }
   nav .navies ul {
@@ -179,11 +177,13 @@
     justify-content: center;
     align-items: center;
   }
-  .tour button {
+
+  .tourbutton {
     color: #ececec;
     background-color: #7f7f7f;
     border-radius: 10px;
     width: 188px;
+    height: 20px;
     position: absolute;
     z-index: 2;
   }
@@ -301,12 +301,15 @@
     align-items: center;
     padding: 20px;
   }
-  .tour button {
+
+  .tourbutton {
+    font-size: medium;
     color: #ececec;
     background-color: #7f7f7f;
     border-radius: 10px;
     width: 188px;
-    position: absolute;
+    height: 35px;
+    position: relative;
     z-index: 2;
   }
 

@@ -6,32 +6,34 @@
     border-bottom: 1px solid #0d0d0d;
   }
   nav .navies {
-    width: 100%;
+    width: 380px;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: flex-end;
-    justify-content: flex-start;
     padding: 5px;
   }
   nav .navies ul {
-    display: flex;
     font-family: sans-serif;
-    justify-content: space-between;
-    align-items: center;
     font-size: medium;
+    gap: 0px;
   }
   nav .navies ul a {
     color: #7f7f7f;
     text-decoration: none;
-    padding: 5px;
+    padding: 0px;
+    gap: 0px;
+    font-weight: normal;
   }
   nav .navies .icons {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: flex-end;
     color: #7f7f7f;
   }
   nav .navies .icons .iconify {
     padding: 2px;
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 380px) {
@@ -43,6 +45,7 @@
     background-color: #e0dbdb;
     border-bottom: 1px solid #0d0d0d;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: flex-end;
     align-items: flex-end;
   }
@@ -51,6 +54,8 @@
     justify-content: space-between;
     align-items: center;
     font-family: sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   nav .navies ul a {
     color: #7f7f7f;
@@ -58,18 +63,17 @@
     padding: 5px;
   }
   nav .navies .icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     color: #7f7f7f;
   }
   nav .navies .icons .iconify {
     padding: 2px;
+    font-size: 35px;
   }
 }
 @media screen and (max-width: 380px) {
   p {
     font-family: poppins;
+    font-size: 24px;
   }
 
   h1 {
@@ -95,6 +99,12 @@
     letter-spacing: 5px;
   }
 
+  h4 {
+    font-family: poppins;
+    font-size: 24px;
+    font-weight: normal;
+  }
+
   button {
     font-family: poppins;
     font-size: 24px;
@@ -111,12 +121,15 @@
     letter-spacing: 15px;
     font-size: 64px;
     font-weight: normal;
+    margin-bottom: 0px;
   }
 
   h2 {
     font-family: Poppins;
     font-size: 64px;
     font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   h3 {
@@ -124,6 +137,7 @@
     font-size: 24px;
     font-weight: normal;
     letter-spacing: 10px;
+    text-shadow: 1px 1px #7f7f7f;
   }
 
   h4 {
