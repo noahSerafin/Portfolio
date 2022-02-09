@@ -29,9 +29,11 @@
     align-items: flex-end;
     color: #7f7f7f;
   }
-  nav .navies .icons .iconify {
+  nav .navies .icons .icon {
+    text-decoration: none;
+    color: #7f7f7f;
     padding: 2px;
-    font-size: 25px;
+    font-size: 35px;
   }
 }
 @media screen and (min-width: 380px) {
@@ -106,6 +108,10 @@
     font-family: poppins;
     font-size: 24px;
   }
+
+  a {
+    font-family: poppins;
+  }
 }
 @media screen and (min-width: 380px) {
   p {
@@ -146,6 +152,10 @@
   button {
     font-family: poppins;
     font-size: 24px;
+  }
+
+  a {
+    font-family: poppins;
   }
 }
 @media screen and (max-width: 380px) {
@@ -203,6 +213,12 @@
     display: block;
     margin: auto;
   }
+  .project-grid .project-link {
+    color: #7f7f7f;
+    text-decoration: none;
+    grid-area: a;
+    padding: 20px;
+  }
 
   .project-grid-inverted {
     background-color: #e0dbdb;
@@ -214,6 +230,12 @@
     object-fit: contain;
     display: block;
     margin: auto;
+  }
+  .project-grid-inverted .project-link {
+    color: #7f7f7f;
+    text-decoration: none;
+    grid-area: a;
+    padding: 20px;
   }
 
   .graphics-grid {
@@ -321,7 +343,7 @@
     margin-top: 20px;
     background-color: #e0dbdb;
     display: grid;
-    grid-template-areas: "title title img" "p p img" "p p img";
+    grid-template-areas: "title title img" "p p img" "a a img";
   }
   .project-grid .project-header {
     grid-area: title;
@@ -330,6 +352,12 @@
   }
   .project-grid p {
     grid-area: p;
+    padding: 20px;
+  }
+  .project-grid .project-link {
+    color: #7f7f7f;
+    text-decoration: none;
+    grid-area: a;
     padding: 20px;
   }
   .project-grid .project-image {
@@ -344,7 +372,7 @@
     margin-top: 20px;
     background-color: #e0dbdb;
     display: grid;
-    grid-template-areas: "img title title" "img p p" "img p p";
+    grid-template-areas: "img title title" "img p p" "img a a";
   }
   .project-grid-inverted .project-header {
     grid-area: title;
@@ -353,6 +381,12 @@
   }
   .project-grid-inverted p {
     grid-area: p;
+    padding: 20px;
+  }
+  .project-grid-inverted .project-link {
+    color: #7f7f7f;
+    text-decoration: none;
+    grid-area: a;
     padding: 20px;
   }
   .project-grid-inverted .project-image {
