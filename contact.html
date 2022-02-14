@@ -1,51 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&family=Poppins&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
     <link href="styles.css" rel="stylesheet" />
     <title>Noah Serafin - Contact</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="navies">
-            <div class="icons">
-                <a class="icon" href="https://www.linkedin.com/in/noah-serafin-3b0626142/">
-                    <span class="iconify" data-icon="entypo-social:linkedin-with-circle"></span>
-                </a>
-                <a class="icon" href="https://github.com/noahSerafin">
-                    <span class="iconify" data-icon="akar-icons:github-fill"></span>
-                </a> 
-                <a class="icon" href="https://www.instagram.com/serafinsolutions">
-                    <span class="iconify" data-icon="entypo-social:instagram-with-circle"></span>
-                </a>  
-            </div>
-            <ul>
-                <a href=index.html>Home</a>
-                <a href=projects.html>Projects</a>                
-                <a href=contact.html>Contact</a>
-            </ul>            
+      <div class="navies">
+        <div class="icons">
+          <a
+            class="icon"
+            href="https://www.linkedin.com/in/noah-serafin-3b0626142/"
+          >
+            <span
+              class="iconify"
+              data-icon="entypo-social:linkedin-with-circle"
+            ></span>
+          </a>
+          <a class="icon" href="https://github.com/noahSerafin">
+            <span class="iconify" data-icon="akar-icons:github-fill"></span>
+          </a>
+          <a class="icon" href="https://www.instagram.com/serafinsolutions">
+            <span
+              class="iconify"
+              data-icon="entypo-social:instagram-with-circle"
+            ></span>
+          </a>
         </div>
+        <ul>
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </ul>
+      </div>
     </nav>
     <main>
-        <header>
-            <h1>Contact</h1>        
-        </header>
-        <h2 class="getIn">Get in touch.</h2>
-        <div class= "contact-form">            
-        
-            <div class = "forms">
-                <h4>email:</h4>
-                <input type="text" required>
-                <h4>mobile (optional):</h4>
-                <input type="text">            
-            </div>
-            
-            <button class="submit">Submit</button>
-        </div>            
-    </main>       
-</body>
+      <header>
+        <h1>Contact</h1>
+      </header>
+      <h2 class="getIn">Get in touch.</h2>
+      <div class="forms"></div>
+        <form class="contact-form" onsubmit="sendEmail()">
+          <h4>email:</h4>
+          <input id="email" type="text" required />
+          <h4>mobile (optional):</h4>
+          <input type="text" />
+          <h4>message:</h4>
+          <textarea id="message" rows="4"></textarea>
+          <br>
+          <button type="submit" class="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      const sendEmail = () => {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "noah.serafin04@gmail.com",
+          Password: "password",
+          To: "noah.serafin04@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "website inquiry",
+          Body: document.getElementById("message").value,
+        }).then((message) => alert(message + "sent"));
+      };
+    </script>
+  </body>
 </html>
