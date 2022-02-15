@@ -170,6 +170,68 @@
     font-family: poppins;
   }
 }
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade1 {
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+.fade2 {
+  -webkit-animation: fadein 3s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 3s;
+  /* Internet Explorer */
+  -o-animation: fadein 3s;
+  /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+
+.fade3 {
+  -webkit-animation: fadein 4s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 4s;
+  /* Internet Explorer */
+  -o-animation: fadein 4s;
+  /* Opera < 12.1 */
+  animation: fadein 4s;
+}
+
 @media screen and (max-width: 380px) {
   body {
     margin: 0;
@@ -188,7 +250,7 @@
     justify-content: center;
   }
 
-  .tour {
+  #tour {
     width: 360px;
     height: 245px;
     margin: auto;
@@ -215,6 +277,7 @@
   }
 
   .project-grid {
+    margin-top: 50px;
     background-color: #e0dbdb;
     padding: 20px;
   }
@@ -314,7 +377,7 @@
     margin-top: 100px;
   }
 
-  .tour {
+  #tour {
     width: 440px;
     height: 300px;
     margin: auto;
