@@ -10,7 +10,7 @@
     <title>Home</title>
 </head>
 <body>
-    <nav>
+    <nav id="nav">
         <div class="navies">
             <div class="icons">
                 <a class="icon" href="https://www.linkedin.com/in/noah-serafin-3b0626142/">
@@ -53,5 +53,19 @@
             <span class="iconify" data-icon="bi:chevron-double-down"></span>
         </div>    
     </footer>
+    <script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("nav");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+    }
+    </script>
 </body>
 </html>

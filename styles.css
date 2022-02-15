@@ -68,6 +68,12 @@
     padding: 2px;
     font-size: 35px;
   }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 380px) {
   p {
@@ -206,32 +212,20 @@
     background-color: #e0dbdb;
     padding: 20px;
   }
+  .project-grid .project-text {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+  }
   .project-grid .project-image {
     height: 300px;
     width: 300px;
+    padding-top: 15px;
     object-fit: contain;
     display: block;
     margin: auto;
   }
   .project-grid .project-link {
-    color: #7f7f7f;
-    text-decoration: none;
-    grid-area: a;
-    padding: 20px;
-  }
-
-  .project-grid-inverted {
-    background-color: #e0dbdb;
-    padding: 20px;
-  }
-  .project-grid-inverted .project-image {
-    height: 300px;
-    width: 300px;
-    object-fit: contain;
-    display: block;
-    margin: auto;
-  }
-  .project-grid-inverted .project-link {
     color: #7f7f7f;
     text-decoration: none;
     grid-area: a;
@@ -340,18 +334,20 @@
   }
 
   .project-grid {
-    margin-top: 20px;
+    margin-top: 70px;
     background-color: #e0dbdb;
-    display: grid;
-    grid-template-areas: "title title img" "p p img" "a a img";
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  .project-grid .project-text {
+    width: 850px;
   }
   .project-grid .project-header {
-    grid-area: title;
     margin-top: 10px;
     margin-left: 20px;
   }
   .project-grid p {
-    grid-area: p;
     padding: 20px;
   }
   .project-grid .project-link {
@@ -361,39 +357,9 @@
     padding: 20px;
   }
   .project-grid .project-image {
-    grid-area: img;
     padding: 20px;
-    height: 300px;
-    width: 300px;
-    object-fit: contain;
-  }
-
-  .project-grid-inverted {
-    margin-top: 20px;
-    background-color: #e0dbdb;
-    display: grid;
-    grid-template-areas: "img title title" "img p p" "img a a";
-  }
-  .project-grid-inverted .project-header {
-    grid-area: title;
-    margin-top: 10px;
-    margin-left: 20px;
-  }
-  .project-grid-inverted p {
-    grid-area: p;
-    padding: 20px;
-  }
-  .project-grid-inverted .project-link {
-    color: #7f7f7f;
-    text-decoration: none;
-    grid-area: a;
-    padding: 20px;
-  }
-  .project-grid-inverted .project-image {
-    grid-area: img;
-    padding: 20px;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     object-fit: contain;
   }
 
