@@ -84,7 +84,7 @@
 @media screen and (max-width: 380px) {
   p {
     font-family: poppins;
-    font-size: 24px;
+    font-size: 16px;
   }
 
   h1 {
@@ -123,11 +123,13 @@
 
   a {
     font-family: poppins;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 380px) {
   p {
     font-family: poppins;
+    font-size: 24px;
   }
 
   h1 {
@@ -168,6 +170,7 @@
 
   a {
     font-family: poppins;
+    font-size: 24px;
   }
 }
 @keyframes fadein {
